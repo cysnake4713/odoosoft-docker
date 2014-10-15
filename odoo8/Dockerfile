@@ -8,7 +8,7 @@ FROM cysnake4713/odoo8-base
 #RUN wget -nv -O /opt/odoo-8.0.zip https://codeload.github.com/odoo/odoo/zip/8.0
 RUN wget -nv -O /opt/odoo-8.0.zip https://github.com/cysnake4713/odoo/archive/tianv.v6.zip
 #-----------------------------------------------------------
-RUN unzip /opt/odoo-8.0.zip -d /opt && mv /opt/odoo-8.0 /opt/odoo && rm /opt/odoo-8.0.zip
+RUN unzip /opt/odoo-8.0.zip -d /opt && mv /opt/tianv.v6 /opt/odoo && rm /opt/odoo-8.0.zip
 #-----------------------------------------------------------
  RUN pip install -e /opt/odoo
 #-----------------------------------------------------------
