@@ -3,19 +3,16 @@ TO cysnake4713/odoo8
 FROM cysnake4713/odoo8-base
 
 #-----add code and install ------------------------
-#ADD odoo-8.0.zip /opt/odoo-8.0.zip
+# ADD odoo-8.0.zip /opt/odoo-8.0.zip
 #-------------------TODO:----------------------------------------
-#RUN wget -nv -O /opt/odoo-8.0.zip https://codeload.github.com/odoo/odoo/zip/8.0
-RUN wget -nv -O /opt/odoo-8.0.zip https://github.com/cysnake4713/odoo/archive/tianv.v7.zip
+RUN wget -nv -O /opt/temp.zip https://github.com/cysnake4713/odoo/archive/8.0.custom.zip
 #-----------------------------------------------------------
-RUN unzip -q /opt/odoo-8.0.zip -d /opt && mv /opt/odoo-tianv.v7 /opt/odoo && rm /opt/odoo-8.0.zip
+RUN unzip -q /opt/temp.zip -d /opt && mv /opt/odoo-8.0.custom /opt/odoo && rm /opt/temp.zip
 #-----------------------------------------------------------
- RUN pip install -e /opt/odoo
+RUN pip install -e /opt/odoo
 #-----------------------------------------------------------
 
 RUN adduser --system --uid=1000 --home /home/odoo --shell /bin/bash odoo
-#RUN chown odoo $ODOO_HOME && chgrp odoo $ODOO_HOME
-#RUN adduser --system --group --home $ODOO_HOME --shell /bin/bash odoo
 
 # Declare volumes for data
 VOLUME ["/home/odoo"]
