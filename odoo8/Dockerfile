@@ -23,6 +23,8 @@ EXPOSE 8069 8072
 #RUN chown -R odoo /var/lib/odoo 
 ENV HOME $ODOO_HOME
 
+RUN pip install wechatpy
+
 USER odoo
 
 CMD openerp-server -c /home/odoo/odoo.conf
