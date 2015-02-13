@@ -2,7 +2,7 @@
 TO cysnake4713/odoo8-debug
 FROM cysnake4713/odoo8
 
-#ADD pycharm-debug.egg /opt/pycharm-debug.egg
+ADD pycharm-debug.egg /opt/pycharm-debug.egg
 
 #RUN adduser --system --uid=1000 --home /home/odoo --shell /bin/bash odoo
 
