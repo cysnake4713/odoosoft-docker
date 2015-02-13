@@ -3,7 +3,8 @@ TO cysnake4713/odoo8-debug
 FROM cysnake4713/odoo8
 
 USER root
-RUN wget -nv -O /opt/pycharm-debug.egg https://github.com/cysnake4713/odoosoft-docker/raw/master/odoo8-debug/pycharm-debug.egg
+#RUN wget -nv -O /opt/pycharm-debug.egg https://github.com/cysnake4713/odoosoft-docker/raw/master/odoo8-debug/pycharm-debug.egg
+ADD pycharm-debug.egg /opt/pycharm-debug.egg
 RUN chmod 777 /opt/pycharm-debug.egg
 USER odoo
 
