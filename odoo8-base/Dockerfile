@@ -27,7 +27,9 @@ python-mako python-mock python-openid python-passlib python-psutil python-psycop
 python-pychart python-pydot python-pyparsing python-pypdf python-reportlab python-requests \
 python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-werkzeug \
 python-xlwt python-yaml wkhtmltopdf \
-python-pip unzip wget postgresql-client wechatpy
+python-pip unzip wget postgresql-client
+
+RUN pip install wechatpy
 #------------------update wkhtmltopdf-----------------------
 RUN cd ~ && wget http://jaist.dl.sourceforge.net/project/wkhtmltopdf/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb && dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb && cp /usr/local/bin/wkhtmltopdf /usr/bin && cp /usr/local/bin/wkhtmltoimage /usr/bin && rm wkhtmltox-0.12.1_linux-trusty-amd64.deb
 
