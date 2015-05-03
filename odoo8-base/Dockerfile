@@ -33,7 +33,6 @@ RUN easy_install pip
 
 RUN pip install wechatpy
 #------------------update wkhtmltopdf-----------------------
-RUN cd ~ && wget http://jaist.dl.sourceforge.net/project/wkhtmltopdf/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb && dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb && cp /usr/local/bin/wkhtmltopdf /usr/bin && cp /usr/local/bin/wkhtmltoimage /usr/bin && rm wkhtmltox-0.12.1_linux-trusty-amd64.deb
-
+RUN cd ~ && wget http://sourceforge.net/projects/wkhtmltopdf/files/archive/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb && dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb && cp /usr/local/bin/wkhtmltopdf /usr/bin && cp /usr/local/bin/wkhtmltoimage /usr/bin && rm wkhtmltox-0.12.1_linux-trusty-amd64.deb
 
 
