@@ -27,7 +27,7 @@ python-gdata python-gevent python-imaging python-jinja2 python-ldap python-libxs
 python-mako python-mock python-openid python-passlib python-psutil python-psycopg2 python-pybabel \
 python-pychart python-pydot python-pyparsing python-pypdf python-reportlab python-requests \
 python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-werkzeug \
-python-xlwt python-yaml wkhtmltopdf \
+python-xlwt python-yaml wkhtmltopdf python-setuptools build-essential\
 unzip wget postgresql-client
 RUN easy_install pip
 
