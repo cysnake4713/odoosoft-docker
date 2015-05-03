@@ -20,15 +20,18 @@ RUN apt-get update
 #   libssl-dev libxml2 libxml2-dev libxslt1-dev libtiff4-dev libjpeg8-dev zlib1g-dev libfreetype6-dev \
 #   liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python-tk python-pypdf python-egenix-mx-base-dbg
 #-----------------------------------------------------------
+
 RUN apt-get remove python-pip
+
 RUN apt-get install -y \ 
 python-dateutil python-decorator python-docutils python-feedparser \
 python-gdata python-gevent python-imaging python-jinja2 python-ldap python-libxslt1 python-lxml \
 python-mako python-mock python-openid python-passlib python-psutil python-psycopg2 python-pybabel \
 python-pychart python-pydot python-pyparsing python-pypdf python-reportlab python-requests \
 python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-werkzeug \
-python-xlwt python-yaml wkhtmltopdf python-setuptools build-essential\
+python-xlwt python-yaml wkhtmltopdf python-setuptools build-essential \
 unzip wget postgresql-client
+
 RUN easy_install pip
 
 RUN pip install wechatpy
