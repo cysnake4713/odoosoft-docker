@@ -2,7 +2,7 @@
 TO cysnake4713/odoo8
 FROM cysnake4713/odoo8-base
 
-RUN apt-get install ttf-wqy-microhei ttf-wqy-zenhei
+RUN apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei
 
 #-----add code and install ------------------------
 # ADD odoo-8.0.zip /opt/odoo-8.0.zip
