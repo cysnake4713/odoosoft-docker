@@ -1,5 +1,4 @@
 # DOCKER-VERSION 0.12.0
-TO cysnake4713/odoo9
 FROM cysnake4713/odoo8-base
 
 RUN apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei
