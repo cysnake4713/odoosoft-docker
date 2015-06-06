@@ -1,7 +1,7 @@
 # DOCKER-VERSION 0.12.0
 FROM cysnake4713/odoo8-base
 
-RUN apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei
+RUN apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei node-less
 
 #-----add code and install ------------------------
 # ADD odoo-9.0.zip /opt/odoo-9.0.zip
