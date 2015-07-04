@@ -1,5 +1,4 @@
 # DOCKER-VERSION 0.12.0
-TO cysnake4713/odoo8-base
 FROM ubuntu:14.04
 
 # -----------------Set ENV----------------------------- 
