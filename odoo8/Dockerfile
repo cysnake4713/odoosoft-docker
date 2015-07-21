@@ -8,9 +8,9 @@ RUN pip install pycrypto wechatpy
 #-----add code and install ------------------------
 # ADD odoo-8.0.zip /opt/odoo-8.0.zip
 #-------------------TODO:----------------------------------------
-RUN wget -nv -O /opt/temp.zip https://github.com/cysnake4713/odoo/archive/8.0.custom.zip
+RUN wget -nv -O /opt/temp.zip https://github.com/cysnake4713/odoo/archive/8.0.docker.zip
 #-----------------------------------------------------------
-RUN unzip -q /opt/temp.zip -d /opt && mv /opt/odoo-8.0.custom /opt/odoo && rm /opt/temp.zip
+RUN unzip -q /opt/temp.zip -d /opt && mv /opt/odoo-8.0.docker /opt/odoo && rm /opt/temp.zip
 #-----------------------------------------------------------
 RUN pip install -e /opt/odoo
 #-----------------------------------------------------------
