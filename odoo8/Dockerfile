@@ -3,7 +3,7 @@ FROM cysnake4713/odoo8-base
 
 RUN apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei
 
-RUN pip install pycrypto wechatpy
+RUN pip install pycrypto wechatpy suds
 
 #-----add code and install ------------------------
 # ADD odoo-8.0.zip /opt/odoo-8.0.zip
