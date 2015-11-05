@@ -6,9 +6,9 @@ RUN apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei node-less
 #-----add code and install ------------------------
 # ADD odoo-9.0.zip /opt/odoo-9.0.zip
 #-------------------TODO:----------------------------------------
-RUN wget -nv -O /opt/temp.zip https://github.com/cysnake4713/odoo/archive/9.0.zip
+RUN wget -nv -O /opt/temp.zip https://github.com/cysnake4713/odoo/archive/9.0.docker.zip
 #-----------------------------------------------------------
-RUN unzip -q /opt/temp.zip -d /opt && mv /opt/odoo-9.0 /opt/odoo && rm /opt/temp.zip
+RUN unzip -q /opt/temp.zip -d /opt && mv /opt/odoo-9.0.docker /opt/odoo && rm /opt/temp.zip
 #-----------------------------------------------------------
 RUN pip install -e /opt/odoo
 #-----------------------------------------------------------
