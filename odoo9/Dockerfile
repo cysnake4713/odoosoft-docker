@@ -1,6 +1,7 @@
 # DOCKER-VERSION 0.12.0
 FROM cysnake4713/odoo8-base
 
+RUN pip install pysftp 
 RUN apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei node-less
 
 #-----add code and install ------------------------
