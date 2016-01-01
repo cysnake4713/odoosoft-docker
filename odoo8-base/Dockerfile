@@ -3,6 +3,7 @@ FROM ubuntu:14.04
 
 # -----------------Set ENV----------------------------- 
 RUN locale-gen en_US.UTF-8 && update-locale && echo 'LANG="en_US.UTF-8"' > /etc/default/locale && echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main' > /etc/apt/sources.list.d/pgdg.list
 ENV ODOO_HOME /home/odoo
 #-----------------------------------------------------------
 
@@ -22,14 +23,14 @@ RUN apt-get update
 
 RUN apt-get remove python-pip
 
-RUN apt-get install -y \ 
+RUN apt-get install -y \
 python-dateutil python-decorator python-docutils python-feedparser \
 python-gdata python-gevent python-imaging python-jinja2 python-ldap python-libxslt1 python-lxml \
 python-mako python-mock python-openid python-passlib python-psutil python-psycopg2 python-pybabel \
 python-pychart python-pydot python-pyparsing python-pypdf python-reportlab python-requests \
 python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-werkzeug \
-python-xlwt python-yaml wkhtmltopdf python-setuptools build-essential \
-unzip wget postgresql-client
+python-xlwt python-yaml python-setuptools build-essential \
+unzip wget postgresql-client ttf-wqy-microhei ttf-wqy-zenhei nodejs-less nodejs-clean-css
 
 RUN easy_install pip
 
