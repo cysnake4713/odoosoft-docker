@@ -1,7 +1,7 @@
 # DOCKER-VERSION 0.12.0
 FROM cysnake4713/odoo8-base
 
-RUN pip install pysftp requests==2.6.0 validate_email pyDNS pillow==2.7.0 reportlab==3.1.44
+RUN pip install pysftp requests==2.6.0 validate_email pyDNS pillow reportlab==3.1.44
 
 #-----add code and install ------------------------
 # ADD odoo-9.0.zip /opt/odoo-9.0.zip
