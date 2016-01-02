@@ -30,7 +30,7 @@ python-mako python-mock python-openid python-passlib python-psutil python-psycop
 python-pychart python-pydot python-pyparsing python-pypdf python-reportlab python-requests \
 python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-werkzeug \
 python-xlwt python-yaml python-setuptools build-essential \
-unzip wget postgresql-client ttf-wqy-microhei ttf-wqy-zenhei node-less python-dev
+unzip wget postgresql-client ttf-wqy-microhei ttf-wqy-zenhei node-less python-dev libjpeg-dev zlib1g-dev
 
 RUN easy_install pip
 
