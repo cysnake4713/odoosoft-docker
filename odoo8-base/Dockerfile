@@ -23,7 +23,7 @@ RUN apt-get update
 
 RUN apt-get remove python-pip
 
-RUN apt-get install -y \
+RUN apt-get install -y --force-yes \
 python-dateutil python-decorator python-docutils python-feedparser \
 python-gdata python-gevent python-imaging python-jinja2 python-ldap python-libxslt1 python-lxml \
 python-mako python-mock python-openid python-passlib python-psutil python-psycopg2 python-pybabel \
