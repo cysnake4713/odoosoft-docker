@@ -26,5 +26,5 @@ ENV HOME $ODOO_HOME
 
 USER odoo
 
-CMD openerp-server -c /home/odoo/odoo.conf
+CMD /opt/odoo/openerp-server -c /home/odoo/odoo.conf
 
